@@ -1,10 +1,10 @@
-# Personal Portfolio Website — IWD Assignment
+Personal Portfolio Website — IWD Assignment
 
-**Student Name:** Alex Rivera  
-**Student ID:** 2026CS001  
-**GitHub Repository:** https://github.com/alexrivera/personal-portfolio  
-**Course:** Introduction to Web Development (IWD)  
-**Institution:** Information and Communications University (ICU)
+Student Name: Jetty Kalala  
+Student ID: 2509593930  
+GitHub Repository: https://github.com/jeytt-commits/my-personal-portfolio  
+Course: Introduction to Web Development (IWD)  
+Institution: Information and Communications University (ICU)
 
 ---
 
@@ -12,7 +12,7 @@
 
 ### What type of website will you create and what content will it contain?
 
-I created a **personal portfolio website** for a Computer Science student.  
+I created a personal portfolio website for a Computer Science Student.  
 
 The website contains the following clear sections:
 
@@ -24,7 +24,7 @@ The website contains the following clear sections:
 - **Contact** — A working contact form (mailto) plus alternative contact methods in an `<aside>`.
 - **Footer** — Copyright, last updated date, and useful links.
 
-The site is built with **pure HTML only** (no external CSS or JavaScript) and uses semantic HTML structure throughout.
+I have built this site with pure HTML only (no external CSS or JavaScript) and uses semantic HTML structure throughout.
 
 ---
 
@@ -32,38 +32,38 @@ The site is built with **pure HTML only** (no external CSS or JavaScript) and us
 
 ### 1. Which 5 elements did you find most challenging to implement and why?
 
-1. **`<table>` (with `<thead>`, `<tbody>`, `<tfoot>`, `<caption>`, `<th scope>`)**  
+1. `<table>` (with `<thead>`, `<tbody>`, `<tfoot>`, `<caption>`, `<th scope>`) 
    Tables require careful nesting and correct use of semantic table elements. Getting the structure valid and accessible (using `scope` and `caption`) took extra attention.
 
-2. **`<form>` with multiple input types + `<fieldset>` / `<legend>`**  
+2. `<form>` with multiple input types + `<fieldset>` / `<legend>`  
    Forms involve many related elements (`input`, `label`, `select`, `option`, `textarea`, `button`) and attributes (`type`, `name`, `id`, `for`, `required`, `placeholder`). Keeping everything properly associated was challenging.
 
-3. **`<figure>` + `<figcaption>`**  
+3. `<figure>` + `<figcaption>`  
    These are less commonly used than plain `<img>`. Ensuring the image and its caption are correctly grouped and accessible required looking up best practices.
 
-4. **`<details>` + `<summary>`**  
+4. `<details>` + `<summary>`  
    Interactive disclosure elements are relatively modern. Understanding how they work without JavaScript and placing them meaningfully in the About section needed experimentation.
 
-5. **`<dl>`, `<dt>`, `<dd>` (Description List)**  
+5. `<dl>`, `<dt>`, `<dd>` (Description List)  
    Description lists are underused compared to `<ul>`/`<ol>`. Deciding when they are more appropriate than unordered lists and nesting them correctly was a learning point.
 
 ### 2. How did you use semantic elements (like `<section>`, `<article>`, `<header>`, `<footer>`) to structure your content?
 
-- **`<header>`** — Used for the site-wide header (logo/name + navigation) and also for section-level headers inside `<section>`.
-- **`<nav>`** — Contains the main navigation menu.
-- **`<main>`** — Wraps all primary page content (everything between header and footer).
-- **`<section>`** — Groups major thematic areas: About, Skills, Projects, Education, Contact. Each has an `id` for navigation.
-- **`<article>`** — Used for self-contained pieces of content: the About bio, each individual project, and the education entry.
-- **`<aside>`** — Contains alternative contact methods (supplementary information).
-- **`<footer>`** — Site-wide footer with copyright, links, and last-updated information.
-- **`<address>`** — Used for the university location in the Education section.
-- **`<time>`** — Used for dates (project completion, graduation, last updated) with machine-readable `datetime` attributes.
+- `<header>` — Used for the site-wide header (logo/name + navigation) and also for section-level headers inside `<section>`.
+- `<nav>` — Contains the main navigation menu.
+- `<main>` — Wraps all primary page content (everything between header and footer).
+- `<section>` — Groups major thematic areas: About, Skills, Projects, Education, Contact. Each has an `id` for navigation.
+- `<article>` — Used for self-contained pieces of content: the About bio, each individual project, and the education entry.
+- `<aside>` — Contains alternative contact methods (supplementary information).
+- `<footer>` — Site-wide footer with copyright, links, and last-updated information.
+- `<address>` — Used for the university location in the Education section.
+- `<time>` — Used for dates (project completion, graduation, last updated) with machine-readable `datetime` attributes.
 
 This structure improves accessibility, SEO, and code readability.
 
 ### 3. Which element was most useful for organizing your layout and why?
 
-The **`<section>`** element was the most useful.  
+The `<section>` element was the most useful.  
 
 It allowed me to divide the page into logical, self-contained thematic blocks (About, Skills, Projects, etc.). Combined with unique `id` attributes, it made the navigation menu functional and kept the document outline clean. Without `<section>`, the page would have been a flat sequence of headings and paragraphs, making both maintenance and navigation harder.
 
@@ -73,25 +73,25 @@ It allowed me to divide the page into logical, self-contained thematic blocks (A
 
 ### 1. Which 3 attributes were essential for making your website functional?
 
-1. **`href`** — Used on every `<a>` tag for internal navigation (`#about`, `#skills`, etc.) and external links. Without it, the menu and links would not work.
-2. **`id`** — Assigned to major sections so that the navigation links (`href="#section-id"`) can jump to the correct part of the page.
-3. **`src` + `alt`** (on `<img>`) — `src` is required to display the image; `alt` is essential for accessibility and when the image fails to load.
+1. `href` — Used on every `<a>` tag for internal navigation (`#about`, `#skills`, etc.) and external links. Without it, the menu and links would not work.
+2. `id` — Assigned to major sections so that the navigation links (`href="#section-id"`) can jump to the correct part of the page.
+3. `src` + `alt` (on `<img>`) — `src` is required to display the image; `alt` is essential for accessibility and when the image fails to load.
 
 (Other critical ones: `type` on inputs, `for`/`id` pairing on labels, `required` on form fields.)
 
 ### 2. How did you use the `class` and `id` attributes differently?
 
-- **`id`** — Used for **unique** identifiers that serve a specific purpose:
+- `id` — Used for unique identifiers that serve a specific purpose:
   - Navigation targets (`id="about"`, `id="skills"`, `id="contact"`, etc.)
   - Form control association (`id="fullname"` paired with `for="fullname"`)
   - One-time anchors (`id="top"`)
 
-- **`class`** — In this pure-HTML assignment I intentionally used **very few classes** because there is no CSS. In a real project with CSS, `class` would be used for reusable styling (e.g., `class="project-card"`, `class="btn"`).  
+- `class` — In this pure-HTML assignment I intentionally used **very few classes** because there is no CSS. In a real project with CSS, `class` would be used for reusable styling (e.g., `class="project-card"`, `class="btn"`).  
   `id` is unique and often used for JavaScript targeting or deep linking; `class` is reusable and mainly for styling/grouping.
 
 ### 3. Which attribute helped improve user experience the most and why?
 
-The **`placeholder`** attribute on form inputs and the **`title`** attribute on links/images.
+The `placeholder` attribute on form inputs and the `title` attribute on links/images.
 
 - `placeholder` gives users immediate guidance about what to type (e.g., “Enter your full name”, “your.email@example.com”).
 - `title` provides helpful tooltips when users hover over navigation links and the profile image.
@@ -116,7 +116,7 @@ Together with `required` and proper `<label>` association, these attributes make
 1. Wrote the code in a clean editor with syntax highlighting.
 2. Frequently opened the file in a browser (Chrome/Firefox) to check visual structure and navigation.
 3. Used the browser’s developer tools (Inspect Element) to verify the DOM tree.
-4. Ran the code through the **W3C Markup Validation Service** (https://validator.w3.org/) to catch nesting errors, missing attributes, and accessibility issues.
+4. Ran the code through the W3C Markup Validation Service (https://validator.w3.org/) to catch nesting errors, missing attributes, and accessibility issues.
 5. Tested all internal links and the contact form.
 6. Checked that the page is readable even without any CSS.
 
@@ -152,9 +152,9 @@ git push
 
 ### 2. How many commits did you make and what was your commit message strategy?
 
-I made **4–6 meaningful commits** (depending on iteration).  
+I made 4–6 meaningful commits (depending on iteration).  
 
-**Commit message strategy:**
+Commit message strategy:
 - Use present-tense, imperative mood (“Add…”, “Fix…”, “Improve…”).
 - Keep the first line under 50–72 characters.
 - Describe *why* the change was made when it is not obvious.
@@ -241,12 +241,3 @@ I made **4–6 meaningful commits** (depending on iteration).
 
 ---
 
-**Submission Format**
-
-```
-Student Name: Alex Rivera
-Student ID: 2026CS001
-GitHub Repository: https://github.com/alexrivera/personal-portfolio
-```
-
-*(Replace the placeholder name, ID, and repository URL with your real information before submitting.)*
