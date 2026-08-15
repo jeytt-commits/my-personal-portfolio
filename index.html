@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website of Alex Rivera - Computer Science student at Information and Communications University">
+    <meta name="author" content="Alex Rivera">
+    <meta name="keywords" content="portfolio, web development, HTML, student, ICU">
+    <title>Alex Rivera | Personal Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="top">
+        <h1>Alex Rivera</h1>
+        <p><em>Computer Science Student | Aspiring Web Developer</em></p>
+        <nav>
+            <ul>
+                <li><a href="#about" title="Learn more about me">About</a></li>
+                <li><a href="#skills" title="View my technical skills">Skills</a></li>
+                <li><a href="#projects" title="See my projects">Projects</a></li>
+                <li><a href="#education" title="Education background">Education</a></li>
+                <li><a href="#contact" title="Get in touch">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <header>
+                <h2>About Me</h2>
+            </header>
+            <article>
+                <figure>
+                    <img src="https://via.placeholder.com/200x200.png?text=Alex+Rivera" 
+                         alt="Portrait of Alex Rivera" 
+                         width="200" 
+                         height="200"
+                         title="Alex Rivera profile photo">
+                    <figcaption>Alex Rivera - ICU Student</figcaption>
+                </figure>
+                <p>
+                    Hello! My name is <strong>Alex Rivera</strong>. I am a passionate 
+                    <mark>Computer Science student</mark> at 
+                    <a href="https://www.icu.ac.kr" target="_blank" rel="noopener noreferrer">
+                        Information and Communications University
+                    </a>.
+                </p>
+                <p>
+                    I love building websites and learning how the web works. 
+                    This portfolio demonstrates pure HTML skills as required for 
+                    the <abbr title="Introduction to Web Development">IWD</abbr> assignment.
+                </p>
+                <blockquote cite="https://www.icu.ac.kr">
+                    "Technology is best when it brings people together."
+                    <cite>— Matt Mullenweg</cite>
+                </blockquote>
+                <p>
+                    In my free time I enjoy reading tech blogs, contributing to open-source, 
+                    and experimenting with new HTML features.
+                </p>
+                <details>
+                    <summary>Click to see more personal interests</summary>
+                    <ul>
+                        <li>Photography</li>
+                        <li>Hiking</li>
+                        <li>Playing chess</li>
+                        <li>Learning Korean</li>
+                    </ul>
+                </details>
+            </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <p>Here are the technologies I am currently learning and using:</p>
+            
+            <h3>Web Development</h3>
+            <ul>
+                <li><strong>HTML5</strong> — Semantic markup & accessibility</li>
+                <li><strong>CSS3</strong> — Layouts, Flexbox, Grid (learning)</li>
+                <li><strong>JavaScript</strong> — Basics of interactivity</li>
+            </ul>
+
+            <h3>Programming Languages</h3>
+            <ol>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ol>
+
+            <h3>Tools & Platforms</h3>
+            <dl>
+                <dt>Version Control</dt>
+                <dd>Git & GitHub</dd>
+                <dt>Code Editor</dt>
+                <dd>Visual Studio Code</dd>
+                <dt>Design</dt>
+                <dd>Figma (beginner)</dd>
+            </dl>
+
+            <table border="1">
+                <caption>Skill Proficiency Overview</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Skill</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><small>Self-assessed levels as of 2026</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            
+            <article>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    This very website! Built using only pure HTML to demonstrate 
+                    understanding of semantic elements and attributes.
+                </p>
+                <p>
+                    <time datetime="2026-08-15">Completed: August 15, 2026</time>
+                </p>
+                <p>
+                    <a href="#top">Back to top</a> | 
+                    <a href="https://github.com" target="_blank" rel="noopener">View on GitHub</a>
+                </p>
+            </article>
+
+            <article>
+                <h3>Student Management System (CLI)</h3>
+                <p>
+                    A command-line application written in Python that allows 
+                    managing student records (add, view, update, delete).
+                </p>
+                <pre><code>
+# Sample code snippet
+def add_student(name, student_id):
+    students.append({"name": name, "id": student_id})
+    print("Student added successfully!")
+                </code></pre>
+            </article>
+
+            <article>
+                <h3>Simple Calculator</h3>
+                <p>
+                    A basic calculator built as practice for understanding 
+                    form inputs and basic logic (future JavaScript version planned).
+                </p>
+            </article>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <article>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>
+                    <strong>Institution:</strong> Information and Communications University (ICU)<br>
+                    <strong>Expected Graduation:</strong> <time datetime="2028-06">June 2028</time><br>
+                    <strong>Relevant Coursework:</strong> Introduction to Web Development, 
+                    Data Structures, Algorithms, Database Systems
+                </p>
+                <address>
+                    Information and Communications University<br>
+                    Seoul, South Korea
+                </address>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out using the form below or via email.</p>
+            
+            <form action="mailto:alex.rivera@example.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Send a Message</legend>
+                    
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" 
+                           placeholder="Enter your full name" required maxlength="50"><br><br>
+                    
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" 
+                           placeholder="your.email@example.com" required><br><br>
+                    
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="feedback">Website Feedback</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" 
+                              placeholder="Write your message here..." required></textarea><br><br>
+                    
+                    <label>
+                        <input type="checkbox" name="newsletter" value="yes">
+                        Subscribe to my newsletter
+                    </label><br><br>
+                    
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear Form</button>
+                </fieldset>
+            </form>
+
+            <aside>
+                <h4>Alternative Contact Methods</h4>
+                <ul>
+                    <li>Email: <a href="mailto:alex.rivera@example.com">alex.rivera@example.com</a></li>
+                    <li>GitHub: <a href="https://github.com" target="_blank" rel="noopener">github.com/alexrivera</a></li>
+                    <li>LinkedIn: <a href="https://linkedin.com" target="_blank" rel="noopener">linkedin.com/in/alexrivera</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>
+            <small>
+                &copy; <time datetime="2026">2026</time> Alex Rivera. 
+                All rights reserved. Built with pure HTML for IWD Assignment.
+            </small>
+        </p>
+        <p>
+            <a href="#top" title="Return to the top of the page">Back to Top</a> |
+            <a href="https://validator.w3.org/" target="_blank" rel="noopener">HTML Validator</a>
+        </p>
+        <p>
+            <span>Last updated: </span>
+            <time datetime="2026-08-15T12:00:00">August 15, 2026</time>
+        </p>
+    </footer>
+</body>
+</html>
